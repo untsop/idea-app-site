@@ -1,0 +1,120 @@
+doctype html
+html
+  head
+    meta(charset='UTF-8')
+    meta(http-equiv='X-UA-Compatible', content='IE=Edge')
+    meta#viewport(name='viewport', content='width=device-width, initial-scale=1')
+
+    //- 在这里更新你的产品标题
+    title 新小灵感
+
+    link(rel='stylesheet', type='text/css', href='./vendor/vendor.css?v=<!--@echo curtime -->')
+    link(rel='stylesheet', type='text/css', href='./styles/index.css?v=<!--@echo curtime -->')
+    
+    //- 在这里更换你的社交卡片信息
+    meta(name="twitter:card" content="summary_large_image")
+    meta(name="twitter:title" content="极速捕捉灵感 - 新小灵感")
+    meta(name="twitter:image" content="https://idea.xinxiao.tech/img/card.png?rev=2")
+    meta(name="og:description" content="极速灵感记录工具。支持 iCloud 同步，同时提供 macOS 版。")
+
+    meta(name='msapplication-tap-highlight', content='no')
+  body
+    .max-w-xl.mx-auto.pt-0.md_pt-6
+      .flex.flex-col.md_flex-row.items-center.py-10.md_py-0
+        .px-0.md_pr-8.flex-grow
+          //- 在这里更新图标或 Logo
+          .icon.text-center.md_text-left(style="margin-left: -4px;")
+            <svg class="inline-block" width="48" height="48" viewBox="0 0 231 231" fill="none" xmlns="http://www.w3.org/2000/svg">
+              <rect x="39.5312" y="39.5312" width="151.938" height="151.938" rx="25.3229" stroke="white" stroke-width="11.6875"/>
+              <path d="M41.479 115.5H187.573" stroke="white" stroke-width="11.6875" stroke-linecap="round" stroke-linejoin="round"/>
+              <path d="M82.1582 168.448H82.7734C83.1733 172.016 85.4495 174.077 89.0176 174.077C93.0779 174.077 95.2618 171.678 95.2618 167.248V136.089C95.2618 131.659 93.0779 129.26 89.0176 129.26C84.9573 129.26 82.7734 131.659 82.7734 136.089V145.655H82.1582C80.9586 142.21 77.4827 140.149 72.9303 140.149C65.4864 140.149 61.1185 145.87 61.1185 155.713V158.42C61.1185 168.263 65.5172 174.077 72.9303 174.077C77.4519 174.077 80.9586 171.924 82.1582 168.448ZM74.0684 158.143V156.082C74.0684 151.991 75.6986 149.561 78.4055 149.561C81.1431 149.561 82.7734 151.991 82.7734 156.082V158.143C82.7734 162.265 81.1431 164.726 78.4055 164.726C75.6986 164.726 74.0684 162.265 74.0684 158.143Z" fill="white"/>
+              <path d="M99.9066 158.605C99.9066 168.694 106.674 174.692 117.686 174.692C121.715 174.692 125.099 173.985 127.467 172.723C129.897 171.431 131.281 169.678 131.281 167.463C131.281 164.941 129.713 163.434 127.221 163.434C125.345 163.434 124.514 164.203 123.099 164.849C122.084 165.31 120.792 165.679 118.608 165.679C114.887 165.679 112.733 163.588 112.641 160.696V159.774H126.298C130.543 159.774 132.266 158.205 132.266 154.298C132.266 146.024 125.683 139.687 116.425 139.687C106.397 139.687 99.9066 146.024 99.9066 155.836V158.605ZM112.641 153.314V153.252C112.641 150.515 114.056 148.669 116.701 148.669C119.07 148.669 120.639 150.515 120.639 153.252V153.314H112.641Z" fill="white"/>
+              <path d="M154.474 169.893H155.09C155.674 172.6 157.858 174.077 160.934 174.077C164.81 174.077 166.994 171.801 166.994 167.556V152.268C166.994 144.609 161.395 140.149 151.644 140.149C147.461 140.149 144.231 140.795 141.894 141.841C138.572 143.256 137.157 145.409 137.157 147.5C137.157 149.807 138.725 151.561 141.371 151.561C143.216 151.561 144.416 151.13 145.585 150.607C147.215 149.869 148.784 148.977 150.814 148.977C153.09 148.977 154.505 150.084 154.505 152.053V153.991H147.984C140.11 154.021 135.342 157.836 135.342 164.111C135.342 170.047 139.74 174.077 146.231 174.077C150.045 174.077 153.182 172.477 154.474 169.893ZM147.523 163.065C147.523 161.312 149.03 160.143 151.306 160.143H154.505V163.096C154.505 164.695 152.906 165.987 150.906 165.987C148.968 165.987 147.523 164.757 147.523 163.065Z" fill="white"/>
+              <path d="M68.7502 64.8542L68.7502 92.125" stroke="white" stroke-width="11.6875" stroke-linecap="round" stroke-linejoin="round"/>
+            </svg>
+
+          //- 在这里更新宣传文案
+          .py-4.text-white
+            .text-center.md_text-left.text-4xl.font-semibold.mt-4 灵感速记
+            .text-center.md_text-left.text-4xl.font-semibold.mt-4 打开就写
+          
+          .my-4.text-white
+            //- 在这里更新你的应用市场链接
+            a(href="https://apps.apple.com/app/新小灵感/id1548286677")
+              .inline-block.p-2.border-gray-500.rounded-lg.border.text-center.my-4.text-base.md_text-lg.text-gray-100.hover_border-gray-400
+                span.flex.flex-row
+                  <svg class="svg-inline--fa p-1 w-10 h-10" aria-hidden="true" data-prefix="fab" data-icon="apple" role="img" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 376 512" data-fa-i2svg=""><path fill="currentColor" d="M314.7 268.7c-.2-36.7 16.4-64.4 50-84.8-18.8-26.9-47.2-41.7-84.7-44.6-35.5-2.8-74.3 20.7-88.5 20.7-15 0-49.4-19.7-76.4-19.7C59.3 141.2 0 184.8 0 273.5c0 26.2 4.8 53.3 14.4 81.2 12.8 36.7 59 126.7 107.2 125.2 25.2-.6 43-17.9 75.8-17.9 31.8 0 48.3 17.9 76.4 17.9 48.6-.7 90.4-82.5 102.6-119.3-65.2-30.7-61.7-90-61.7-91.9zm-56.6-164.2c27.3-32.4 24.8-61.9 24-72.5-24.1 1.4-52 16.4-67.9 34.9-17.5 19.8-27.8 44.3-25.6 71.9 26.1 2 49.9-11.4 69.5-34.3z"></path></svg>
+                  span.flex.flex-col.items-start.pr-4.pl-2
+                    span.download-button-label.text-xs Download on the
+                    span.download-button-app-store.text-lg(style="line-height: 1.5rem;") App Store
+
+        .hero-container.py-6
+          #tab-ios.tab-content: img(src="./img/ios-screenshot.png" style="max-width: 400px; object-fit: contain; max-height: 500px;")
+          #tab-macos.tab-content(style="display: none;"): img(src="./img/mac-screenshot.png" style="max-width: 400px; object-fit: contain; max-height: 500px;")
+
+          .w-36.mx-auto.pt-2.my-4: .segmented-control
+            span.selection
+            .option
+              input#ios(type='radio' name='mp' value='ios' checked)
+              label(for='ios')
+                span iOS
+            
+            .option
+              input#macos(type='radio' name='mp' value='macos')
+              label(for='macos')
+                span macOS
+
+    .faqs.max-w-xl.mx-auto.px-4.md_px-0.pt-0.md_pt-6
+      mixin faq(index, title, content)
+        .option.border-solid.border-b.border-gray-700
+          input.toggle.hidden(id="toggle"+index type='checkbox')
+          label.faq-title.relative.block.py-6.text-gray-300.text-sm.md_text-base(for="toggle"+index)=title
+          .faq-content.text-sm.text-white
+            p=content
+
+      h3.my-4.text-white.text-xl.text-center.md_text-left.font-bold 常见问题
+      //- 在这里更新常见问题
+      +faq(1, "如何搜索灵感？", "以 ? 开头输入关键词即可进行搜索。软键盘上方的工具栏中也提供了快捷输入 ? 的按钮。")
+      +faq(2, "如何删除一个灵感？", "长按选择“删除”即可。请注意：执行删除操作时，数据将立即永久删除，无法找回。")
+      +faq(3, "如何开启 iCloud 同步？", "iCloud 同步自动打开，无需手动开启，目前亦不提供关闭的选项。")
+    
+    include ./partials/_footer.pug
+
+    //- 在这里更新在线客服代码
+    script.
+      (function(y,o,u,k,e){if(y[k]){return;}y['YoukeInstance']=k;y[k]=y[k]||function(){(y[k].e=y[k].e||[]).push(arguments)};e=o.createElement('script');e.async=1;e.src=u;o.currentScript?o.currentScript.parentNode.insertBefore(e,o.currentScript):o.body.appendChild(e);})(window,document,'https://static.cdn.youke.co/js/widget.js','$youke');$youke('load','BnX79oU5sMybQ8Lt')
+
+    script.
+      const SEGMENTED_CONTROL_BASE_SELECTOR = ".segmented-control";
+      const SEGMENTED_CONTROL_INDIVIDUAL_SEGMENT_SELECTOR = ".segmented-control .option input";
+      const SEGMENTED_CONTROL_BACKGROUND_PILL_SELECTOR = ".segmented-control .selection";
+      const SEGMENTED_CONTROL_TAB_CONTENT = ".tab-content";
+
+      function forEachElement(className, fn) {
+        Array.from(document.querySelectorAll(className)).forEach(fn);
+      }
+
+      function setup() {
+        forEachElement(SEGMENTED_CONTROL_INDIVIDUAL_SEGMENT_SELECTOR, elem => {
+          elem.addEventListener("change", updatePillPosition);
+        })
+        window.addEventListener("resize", updatePillPosition);
+      }
+
+      function updatePillPosition() {
+        forEachElement(SEGMENTED_CONTROL_INDIVIDUAL_SEGMENT_SELECTOR, (elem, index) => {
+          if (elem.checked) {
+            moveBackgroundPillToElement(elem, index);
+            forEachElement(SEGMENTED_CONTROL_TAB_CONTENT, (el) => {
+              el.style.display = "none"
+            })
+            document.querySelector('#tab-' + elem.value).style.display = "block"
+          }
+        })
+      }
+
+      function moveBackgroundPillToElement(elem, index) {
+        document.querySelector(SEGMENTED_CONTROL_BACKGROUND_PILL_SELECTOR).style.transform = "translateX(" + (elem.offsetWidth * index) + "px)";
+      }
+
+      document.addEventListener("DOMContentLoaded", setup);

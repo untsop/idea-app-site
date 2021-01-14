@@ -1,0 +1,7 @@
+/node_modules
+/dist
+/deploy
+/.netlify
+/.vscode
+.DS_Store
+.vercel

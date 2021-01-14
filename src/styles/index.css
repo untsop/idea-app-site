@@ -1,0 +1,168 @@
+body {
+  background: #454545;
+}
+
+.container {
+  max-width: 640px;
+  margin: 0 auto;
+}
+
+.faq-content {
+  max-height: 0;
+  overflow: hidden;
+}
+
+.faq-content p {
+  margin: 0;
+  padding: 0.5em 0 1em;
+  font-size: 0.9em;
+  line-height: 1.5;
+}
+
+.faq-title:after, .faq-title:before {
+  content: '';
+  position: absolute;
+  right: 1.25em;
+  top: 1.25em;
+  width: 1px;
+  height: 22px;
+  background-color: #999;
+  transition: all 0.2s;
+}
+
+.faq-title:after {
+  transform: rotate(90deg);
+}
+
+.toggle:checked + .faq-title + .faq-content {
+  max-height: 500px;
+}
+
+.toggle:checked + .faq-title:before {
+  transform: rotate(90deg) !important;
+}
+
+.segmented-control {
+  --background: #292929;
+  background: var(--background);
+  border-radius: 9px;
+  margin: 0;
+  padding: 3px;
+  border: none;
+  outline: none;
+  display: grid;
+  grid-auto-flow: column;
+  grid-auto-columns: 1fr;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.segmented-control .option {
+  position: relative;
+  cursor: pointer;
+}
+
+.segmented-control .option:hover input:not(:checked) + label span, .segmented-control .option:active input:not(:checked) + label span, .segmented-control .option:focus input:not(:checked) + label span {
+  opacity: .6;
+}
+
+.segmented-control .option:active input:not(:checked) + label span {
+  transform: scale(.95);
+}
+
+.segmented-control .option label {
+  position: relative;
+  display: block;
+  text-align: center;
+  padding: 4px 6px;
+  background: rgba(255,255,255,0);
+  font-weight: 500;
+  color: #666;
+  font-size: 14px;
+}
+
+.segmented-control .option label::before, .segmented-control .option label::after {
+  content: '';
+  width: 1px;
+  background: rgba(142,142,147,.15);
+  position: absolute;
+  top: 14%;
+  bottom: 14%;
+  border-radius: 10px;
+  will-change: background;
+  transition: background .2s ease;
+}
+
+.segmented-control .option label::before {
+  left: 0;
+  transform: translateX(-.5px);
+}
+
+.segmented-control .option label::after {
+  right: 0;
+  transform: translateX(.5px);
+}
+
+.segmented-control .option:first-of-type {
+  grid-column: 1;
+  grid-row: 1;
+  box-shadow: none;
+}
+
+.segmented-control .option:first-of-type label::before {
+  opacity: 0;
+}
+
+.segmented-control .option:last-of-type label::after {
+  opacity: 0;
+}
+
+.segmented-control .option input {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100%;
+  padding: 0;
+  margin: 0;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  outline: none;
+  border: none;
+  opacity: 0;
+}
+
+.segmented-control .selection {
+  background: #484848;
+  border: .5px solid rgba(0,0,0,0.04);
+  box-shadow: 0 3px 8px 0 rgba(0,0,0,0.12), 0 3px 1px 0 rgba(0,0,0,0.04);
+  border-radius: 7px;
+  grid-column: 1;
+  grid-row: 1;
+  z-index: 2;
+  will-change: transform;
+  transition: transform .2s ease;
+}
+
+.segmented-control .option label span {
+  display: block;
+  position: relative;
+  z-index: 2;
+  transition: all .2s ease;
+  will-change: transform;
+}
+
+.segmented-control .option input:checked+label::before, .segmented-control .option input:checked+label::after {
+  background: var(--background);
+  z-index: 1;
+}
+
+.segmented-control .option input:checked+label {
+  cursor: default;
+  color: #CCC;
+}
